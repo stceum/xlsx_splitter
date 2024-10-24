@@ -1,5 +1,6 @@
 import openpyxl
 from copy import copy
+import os
 
 
 class ExcelSplitter:
@@ -10,7 +11,6 @@ class ExcelSplitter:
     def split_by_row_in_average(self, sheet_name, num, target_file, save_in_one_file=True):
         if not save_in_one_file:
             if target_file.endswith(".xlsx"):
-                import os
                 target_file = target_file.rsplit(".xlsx", 1)[0]
                 if not os.path.exists(target_file):
                     os.mkdir(target_file)
