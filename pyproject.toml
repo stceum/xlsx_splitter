@@ -1,0 +1,10 @@
+[project]
+name = "xlsx-splitter"
+version = "0.0.1"
+dependencies = [
+  'openpyxl'
+]
+
+[project.scripts]
+xlsx-split = "xlsx_splitter.cli:run"
+
