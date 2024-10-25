@@ -4,6 +4,21 @@ version = "0.0.1"
 dependencies = [
   'openpyxl'
 ]
+authors = [
+  { name="stceum", email="50257864+stceum@users.noreply.github.com" },
+]
+description = "A XLSX splitter."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/stceum/xlsx_splitter"
+Issues = "https://github.com/stceum/xlsx_splitter/issues"
 
 [project.scripts]
 xlsx-split = "xlsx_splitter.cli:run"
